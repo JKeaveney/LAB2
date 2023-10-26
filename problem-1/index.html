@@ -5,3 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Directory</title>
 </head>
+<body>
+    <header>
+        <h1>Jamie's Phone Directory</h1>
+    </header>
+
+    <main>
+        <h2>Add Contact</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="button" onclick="addContact()">Add Contact</button>
+        </form>
+        <div id="error"></div>
+        <h2>Contacts</h2>
+        <input type="text" id="search" oninput="filterContacts()" placeholder="Search by Mobile">
+        <div id="noResult">No contacts have been found.</div>
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
