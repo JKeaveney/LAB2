@@ -1,2 +1,2 @@
 # LAB2
-LAB2 Phone Directory Application
+Lab 2 containing problems 1, 2, 3.
